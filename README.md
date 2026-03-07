@@ -1,4 +1,3 @@
-<img width="1827" height="1064" alt="mermaid-diagram-2026-02-10-151131" src="https://github.com/user-attachments/assets/dbdd59fc-e0c8-4d08-acfc-806f832dde60" />
 
 # AWS Serverless API with Terraform
 
