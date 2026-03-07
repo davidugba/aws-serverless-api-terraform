@@ -1,0 +1,6 @@
+
+flowchart LR
+    Client[Client / Browser] -->|GET /| APIGW[API Gateway HTTP API]
+    APIGW --> Lambda[Lambda Function: aws-serverless-api-dev-handler]
+    Lambda --> DDB[DynamoDB Table: aws-serverless-api-dev-items]
+    Lambda --> Logs[CloudWatch Logs]
