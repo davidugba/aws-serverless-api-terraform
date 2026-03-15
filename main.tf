@@ -1,6 +1,15 @@
 terraform {
   required_version = ">= 1.0"
 
+
+  backend "s3" {
+    bucket         = "tfstate-davidugba-049749094059-eu-north-1"
+    key            = "aws-serverless-api-terraform/dev/terraform.tfstate"
+    region         = "eu-north-1"
+    dynamodb_table = "terraform-locks-davidugba"
+    encrypt        = true
+  }
+
   required_providers {
     aws = {
       source  = "hashicorp/aws"
